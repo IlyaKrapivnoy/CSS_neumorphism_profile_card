@@ -17,7 +17,8 @@ body {
 
 .wrapper, 
 .wrapper .img-area,
-.wrapper .social-icons a {
+.wrapper .social-icons a,
+.buttons button {
     background: #ecf0f3;
     border-radius: 10px;
     box-shadow: -3px -3px 7px #fff,
@@ -101,4 +102,26 @@ body {
 .social-icons a.youtube i {
     color: #ff0000;
 }
- 
+
+.wrapper .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.buttons button:first-child {
+    margin-right: 10px;
+} 
+
+.buttons button:last-child {
+    margin-left: 10px;
+}
