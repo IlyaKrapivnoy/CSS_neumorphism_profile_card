@@ -32,6 +32,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .wrapper .img-area {
@@ -53,6 +54,7 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .wrapper .name {
@@ -182,4 +184,30 @@ body {
 
 .row:first-childd::before {
     background: none;
+}
+
+.wrapper .icon {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    color: #31344b;
+    opacity: .7;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    opacity: .4;
+    transition: opacity .2s ease-in-out;
+}
+
+.wrapper .icon.fa-arrow-left {
+    left: 25px;
+}
+
+.wrapper .icon.fa-ellipsis-v {
+    right: 25px;
+}
+
+.wrapper .icon:hover {
+    opacity: 1;
 }
