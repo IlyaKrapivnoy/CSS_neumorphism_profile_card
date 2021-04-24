@@ -16,7 +16,8 @@ body {
 }
 
 .wrapper, 
-.wrapper .img-area {
+.wrapper .img-area,
+.wrapper .social-icons a {
     background: #ecf0f3;
     border-radius: 10px;
     box-shadow: -3px -3px 7px #fff,
@@ -52,3 +53,52 @@ body {
     width: 100%;
     border-radius: 50%;
 }
+
+.wrapper .name {
+    font-size: 23px;
+    font-weight: 300;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+}
+
+.wrapper .about {
+    color: #44476a;
+    font-size: 16px;
+}
+
+.wrapper .social-icons {
+    margin: 15px 0 25px 0;
+}
+
+.social-icons a {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 10%;
+}
+
+.social-icons a i {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+}
+
+.social-icons a.facebook i {
+    color: #426782;
+}
+
+.social-icons a.twitter i {
+    color: #1DA1F2;
+}
+
+.social-icons a.pinterest i {
+    color: #E1306C;
+}
+
+.social-icons a.youtube i {
+    color: #ff0000;
+}
+ 
