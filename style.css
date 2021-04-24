@@ -74,10 +74,30 @@ body {
 .social-icons a {
     height: 40px;
     width: 40px;
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none;
     margin: 0 5px;
     border-radius: 10%;
+    position: relative;
+}
+
+.social-icons a:hover::before,
+.buttons button:hover::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: inset -3px -3px 7px #fff,
+                inset 3px 3px 5px #ceced1;
+}
+
+.buttons button:hover::before {
+    border-radius: 5px;
+    z-index: -1;
 }
 
 .social-icons a i {
@@ -85,6 +105,8 @@ body {
     width: 100%;
     height: 100%;
     line-height: 40px;
+    position: relative;
+    z-index: 5;
 }
 
 .social-icons a.facebook i {
@@ -110,6 +132,7 @@ body {
 }
 
 .buttons button {
+    position: relative;
     width: 100%;
     border: none;
     outline: none;
@@ -117,6 +140,9 @@ body {
     font-size: 13px;
     font-weight: 400;
     border-radius: 5px;
+    cursor: pointer;
+    color: #31344b;
+    z-index: 4;
 }
 .buttons button:first-child {
     margin-right: 10px;
